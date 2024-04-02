@@ -1,0 +1,33 @@
+.Fonctionnement
+    +flex-reg
+    padding: 20px
+    background-color: $background-color-fiche
+    
+    h2
+        width: 100%
+
+    .fonct-button
+        position: relative
+        margin-bottom: 20px
+        border-radius: 22px
+        border: 0px
+        background-color: $background-color-body
+        width: 98%
+        height: 72.38px
+        +box-shadow
+
+        .fa-circle
+            +absolute-center-x(0)
+            color: #9356DC
+
+            p
+                +absolute-center-x
+                color: white 
+                margin: 0
+                font-size: $fs14
+        i
+            color: $color-ico
+        
+        .fa-mobile-alt,.fa-list-ul,.fa-store
+            position: absolute
+            transform: translateX(-200%)

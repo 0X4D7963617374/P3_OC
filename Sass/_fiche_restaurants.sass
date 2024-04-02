@@ -1,0 +1,48 @@
+.restaurant
+    +flex-column
+    padding: 20px
+
+    a
+        +flex-center
+        margin-bottom: 20px
+
+    .fiche
+        +size-w-h(100%,250px)
+        position: relative
+        border-radius: $border-radius-fiche
+        background-color: $background-color-fiche
+        +box-shadow
+
+        img
+            +size-w-h(100%,68%)
+            object-fit: cover
+            border-radius: $border-radius-img
+
+        .fiche-new
+            position: absolute
+            +size-w-h(80px,29px)
+            top: 10px
+            right: 10px
+            background-color: $background-color-new
+            color: $color-text-new
+            border-radius: $border-radius-new
+            +flex-center
+            font-size: $fs14
+            font-weight: bold
+
+
+    .separation-heart
+        +flex-center-between
+        padding: 0 20px
+
+        h3
+            font-size: $fs18
+            margin-bottom: 0
+
+        p
+            font-size: $fs17
+            margin-top: 0
+
+        .far.fa-heart
+            font-size: $fs22
+            margin-right: 5px

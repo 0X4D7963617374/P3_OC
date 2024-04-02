@@ -1,20 +1,19 @@
 footer
-  background-color: #353535
-  display: flex
-  flex-direction: column
-  gap: 16px
-  padding: 22px 25px
-  font-size: 16px
+  background-color: $background-footer
+  +flex-column
+  gap: $gap-footer
+  padding: $pading-footer
+  font-size: $fs16
   
   .logo img
-    width: 90px
+    +size-w-h(90px,auto)
     filter: invert(100%)
   a
     text-decoration: none
-    color: white
+    color: $color-footer
 
     i
-      font-size: 13px
+      font-size: $fs13
       margin-right: 8px 
 
     .fa-hands-helping
