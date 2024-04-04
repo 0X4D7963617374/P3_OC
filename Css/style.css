@@ -98,8 +98,6 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
-  font-size: 22px;
-  margin-right: 5px;
 }
 .restaurant .separation-heart h3 {
   font-size: 18px;
@@ -109,9 +107,13 @@
   font-size: 17px;
   margin-top: 0;
 }
+.restaurant .separation-heart .fa-heart {
+  font-size: 22px;
+  margin-right: 5px;
+}
 .restaurant .separation-heart .far.fa-heart {
   position: absolute;
-  right: 25px;
+  right: 20px;
 }
 .restaurant .separation-heart .far.fa-heart:hover + .fas.fa-heart {
   animation: heart-grow-in 400ms ease forwards;
@@ -154,6 +156,7 @@ footer a .fa-hands-helping {
 
 body {
   background-color: #f6f6f6;
+  margin: 0px;
 }
 
 .intro_index {
@@ -199,6 +202,43 @@ body {
 }
 .intro_index a button:not(:hover) {
   animation: gradient-button-out 400ms ease forwards, shadow-button-out 400ms ease forwards;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  background-color: white;
+  width: 100%;
+}
+.header .logo img {
+  height: 40px;
+}
+.header .shearch-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #EAEAEA;
+  width: 100%;
+  height: 50px;
+}
+.header .shearch-bar i {
+  color: black;
+  margin-right: 5px;
+}
+.header .shearch-bar input {
+  border: none;
+  outline: none;
+  width: 120px;
+  font-size: 16px;
+  background-color: #EAEAEA;
 }
 
 @keyframes gradient-button-in {

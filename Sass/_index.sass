@@ -1,5 +1,6 @@
 body
     background-color: $background-color-body
+    margin: 0px
 
 .intro_index
     +flex-reg
@@ -39,3 +40,30 @@ body
             &:not(:hover) 
                 animation: gradient-button-out 400ms ease forwards, shadow-button-out 400ms ease forwards
 
+.header
+    +flex-reg
+
+    .logo
+        +flex-center
+        height: 60px
+        background-color: white
+        width: 100%
+        img
+            height: 40px
+
+    .shearch-bar
+        +flex-center
+        background-color: $color-input
+        width: 100%
+        height: 50px
+
+        i
+            color: black
+            margin-right: 5px
+
+        input
+            border: none
+            outline: none
+            width: 120px
+            font-size: $fs16
+            background-color: $color-input
