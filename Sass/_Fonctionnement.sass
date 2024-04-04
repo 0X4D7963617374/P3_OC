@@ -13,7 +13,7 @@
         border: 0px
         background-color: $background-color-body
         width: 98%
-        height: 72.38px
+        height: 64px
         +box-shadow
 
         .fa-circle
@@ -31,3 +31,13 @@
         .fa-mobile-alt,.fa-list-ul,.fa-store
             position: absolute
             transform: translateX(-200%)
+
+        &:hover
+            animation: shadow-button-in 400ms ease forwards
+            .fa-mobile-alt,.fa-list-ul,.fa-store
+                color: #9356DC
+
+        &:not(:hover)    
+            animation: shadow-button-out 400ms ease forwards
+
+  

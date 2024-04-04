@@ -43,6 +43,24 @@
             font-size: $fs17
             margin-top: 0
 
+        .fa-heart
+        font-size: $fs22
+        margin-right: 5px
+
         .far.fa-heart
-            font-size: $fs22
-            margin-right: 5px
+            position: absolute
+            right: 25px
+            &:hover + .fas.fa-heart
+                animation: heart-grow-in 400ms ease forwards
+
+        .fas.fa-heart
+            color: transparent 
+            background: linear-gradient(to bottom, $color-button-p 25%, $color-button-s 100%)
+            background-clip: text
+            z-index: 2
+            &:not(:hover)    
+                animation: heart-grow-out 400ms ease forwards
+
+
+            
+        
