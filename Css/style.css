@@ -157,6 +157,7 @@ footer a .fa-hands-helping {
 body {
   background-color: #f6f6f6;
   margin: 0px;
+  font-family: "Roboto", sans-serif;
 }
 
 .intro_index {
@@ -228,6 +229,7 @@ body {
   background-color: #EAEAEA;
   width: 100%;
   height: 50px;
+  box-shadow: 0 -2px 0 rgba(0, 0, 0, 0.15), 0 2px 0 rgba(0, 0, 0, 0.15);
 }
 .header .shearch-bar i {
   color: black;
