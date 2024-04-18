@@ -1,6 +1,6 @@
 footer
   background-color: $background-footer
-  +flex-column
+  +flex-column()
   gap: $gap-footer
   padding: $pading-footer
   font-size: $fs16
@@ -18,3 +18,26 @@ footer
 
     .fa-hands-helping
       margin-right: 4px
+
+@media (min-width: 768px)
+  footer
+    +flex-row()
+    justify-content: right
+    align-items: center 
+    padding: 30px 25px 30px 25px 
+    
+
+    .logo
+      order: 3 
+      align-items: center 
+      padding: 0px 25px 0px 25px 
+    
+    a
+      font-size: $fs16
+
+      i
+        font-size: $fs16
+     
+
+
+

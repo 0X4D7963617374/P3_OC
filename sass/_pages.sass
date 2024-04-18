@@ -1,0 +1,226 @@
+
+.header-pages
+    width: 100%
+    background: $background-color-body
+    padding: 10px 0 
+
+    nav
+        display: flex
+        justify-content: center
+        align-items: center
+        position: relative
+        height: 60px 
+
+        a.fas.fa-arrow-left
+            position: absolute
+            left: 10px 
+            text-decoration: none
+            color: inherit
+
+        img
+            height: auto 
+            max-height: 100% 
+
+.img-pages
+    +size-w-h(100%,300px)
+    object-fit: cover
+    border-radius: $border-radius-img  
+
+.titre-pages
+    display: flex
+    justify-content: space-between
+    align-items: center
+    position: relative
+    width: 95%
+    margin-top: -25px 
+    padding: 20px 
+    background: $background-color-body
+    border-radius: 25px 25px 0 0
+
+
+    h1
+        margin: 0
+        font-family: Shrikhand, cursive
+        font-weight: normal
+
+    .fa-heart
+        font-size: $fs22
+        margin-right: 20px
+
+    .far.fa-heart
+        position: absolute
+        right: 20px
+        &:hover + .fas.fa-heart
+            animation: heart-grow-in 400ms ease forwards
+
+    .fas.fa-heart
+        color: transparent 
+        background: linear-gradient(to bottom, $color-button-p 25%, $color-button-s 100%)
+        background-clip: text
+        z-index: 2
+        &:not(:hover)    
+             animation: heart-grow-out 400ms ease forwards
+
+.section-pages
+    background: $background-color-body
+    padding: 20px
+    width: 95%
+
+
+    article
+        transform: translateY(500px) 
+        animation: slideIntoPlace 1s ease forwards 
+
+    @keyframes slideIntoPlace
+        from
+            transform: translateY(500px)
+        to
+            transform: translateY(0)
+
+
+    h2
+        margin-bottom: 15px
+        text-align: left
+        position: relative
+        font-size: $fs16
+        &:after
+            content: ''
+            position: absolute
+            left: 0
+            bottom: -5px
+            width: 40px
+            height: 3px
+            background-color: $background-color-new
+
+    .partie-item
+        position: relative
+        background: $background-color-fiche
+        border-radius: 25px
+        padding: 15px 20px
+        margin-bottom: 10px
+        display: flex
+        flex-direction: column
+        +box-shadow(0px, 4px, 8px, $shadow-color)
+        overflow: hidden
+
+        h3
+            margin: 0 0 10px 0
+            font-size: $fs18
+
+        .partie-prix
+            display: flex
+            justify-content: space-between
+            align-items: center
+
+        p
+            margin: 0
+            font-size: $fs15
+
+        span
+            font-weight: bold
+            transform: translateX(0)
+            transition: transform 0.5s ease
+
+        &:hover .partie-prix span
+            transform: translateX(-60px)
+            transition: transform 0.5s ease
+
+
+        .check
+            position: absolute
+            right: -50px
+            top: 50%
+            transform: translateY(-50%)
+            display: flex
+            flex-direction: row
+            flex-wrap: nowrap
+            justify-content: center
+            align-items: center
+            background-color: $background-color-new
+            color: white
+            height: 100%
+            width: 80px
+            margin-right: -60px
+            cursor: pointer
+            transition: right 0.5s ease, transform 0.5s ease
+
+            .fa-check-circle
+                transform: rotate(0deg)
+                transition: transform 1s ease
+
+        &:hover .check
+            right: 50px
+            
+            .fa-check-circle
+                transform: rotate(360deg)
+                transition: transform 1s ease
+        
+.button-pages
+    display: flex
+    justify-content: center
+    align-items: center
+    padding-top: 50px
+
+    button
+        +flex-reg
+        margin-bottom: 20px
+        border-radius: 24px
+        border: 0px
+        background-image: linear-gradient(to top, $color-button-p 25%, $color-button-s 100%)
+        height: 50px
+        width: 200px 
+        color: white  
+        font-size: $fs16
+        text-decoration: none
+        transition: background-image
+        +box-shadow(0px, 4px, 8px, $shadow-color)
+        cursor: pointer
+
+        &:hover
+            animation: gradient-button-in 400ms ease forwards, shadow-button-in 400ms ease forwards
+
+        &:not(:hover) 
+            animation: gradient-button-out 400ms ease forwards, shadow-button-out 400ms ease forwards
+
+
+@media (min-width: 768px)
+    .body-pages
+        background: $background-color-fiche
+
+        .main-pages
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            width: 70%
+            margin: 0 auto
+        
+            .titre-pages
+                display: flex
+                justify-content: center
+                align-items: center
+                position: relative
+                width: 100%
+                padding-top: 40px
+
+                h1
+                    position: absolute
+                    left: 47%
+                    transform: translateX(-50%)
+
+                .fa-heart
+                    margin-right: 100px
+
+                .far.fa-heart, .fas.fa-heart
+                    position: absolute
+                    right: 20px
+                
+            .section-pages
+                width: 100%
+            
+            article
+                display: flex
+                flex-direction: column
+                justify-content: center
+                margin: 0 auto
+                width: 80%

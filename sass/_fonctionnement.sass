@@ -1,43 +1,64 @@
-.Fonctionnement
+.fonctionnement
     +flex-reg
     padding: 20px
     background-color: $background-color-fiche
-    
+
     h2
         width: 100%
 
-    .fonct-button
-        position: relative
-        margin-bottom: 20px
-        border-radius: 22px
-        border: 0px
-        background-color: $background-color-body
+    .fonctsepar
         width: 98%
-        height: 64px
-        +box-shadow
+    
 
-        .fa-circle
-            +absolute-center-x(0)
-            color: #9356DC
+        .fonct-button
+            position: relative
+            margin-bottom: 20px
+            border-radius: 22px
+            border: 0px
+            background-color: $background-color-body
+            width: 100%
+            height: 64px
+            +box-shadow
 
-            p
-                +absolute-center-x
-                color: white 
-                margin: 0
-                font-size: $fs14
-        i
-            color: $color-ico
-        
-        .fa-mobile-alt,.fa-list-ul,.fa-store
-            position: absolute
-            transform: translateX(-200%)
-
-        &:hover
-            animation: shadow-button-in 400ms ease forwards
-            .fa-mobile-alt,.fa-list-ul,.fa-store
+            .fa-circle
+                +absolute-center-x(0)
                 color: #9356DC
 
-        &:not(:hover)    
-            animation: shadow-button-out 400ms ease forwards
+                p
+                    +absolute-center-x
+                    color: white
+                    margin: 0
+                    font-size: $fs14
+            i
+                color: $color-ico
+            
+            .fa-mobile-alt,.fa-list-ul,.fa-store
+                position: absolute
+                transform: translateX(-150%)
 
-  
+            &:hover
+                animation: shadow-button-in 400ms ease forwards
+                .fa-mobile-alt,.fa-list-ul,.fa-store
+                    color: #9356DC
+
+            &:not(:hover)
+                animation: shadow-button-out 400ms ease forwards
+
+
+@media (min-width: 768px)
+    .fonctionnement
+
+        h2
+            width: 80%
+
+        .fonctsepar
+            +flex-reg(row,center, center)
+            width: 125%
+
+            .fonct-button
+                position: relative
+                margin-left: 10px
+                margin-right: 10px
+                width: 20%
+            
+    
