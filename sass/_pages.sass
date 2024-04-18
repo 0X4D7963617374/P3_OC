@@ -46,6 +46,7 @@
     .fa-heart
         font-size: $fs22
         margin-right: 20px
+        cursor: pointer
 
     .far.fa-heart
         position: absolute
@@ -115,6 +116,15 @@
         p
             margin: 0
             font-size: $fs15
+            overflow: hidden
+            white-space: nowrap
+            text-overflow: ellipsis
+            width: 100%
+            transition: width 0.5s ease
+
+        &:hover p
+            width: calc(100% - 90px)
+           
 
         span
             font-weight: bold
