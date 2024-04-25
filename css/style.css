@@ -30,7 +30,7 @@
   transform: translate(-50%, -50%);
   color: #9356DC;
 }
-.fonctionnement .fonctsepar .fonct-button .fa-circle p {
+.fonctionnement .fonctsepar .fonct-button .fa-circle span {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -245,7 +245,7 @@ body {
 .intro_index a {
   text-decoration: none;
 }
-.intro_index a button {
+.intro_index .button {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -260,13 +260,14 @@ body {
   font-size: 16px;
   text-decoration: none;
   transition: background-image;
+  padding: 0px 10px;
   filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.15));
   cursor: pointer;
 }
-.intro_index a button:hover {
+.intro_index .button:hover {
   animation: gradient-button-in 400ms ease forwards, shadow-button-in 400ms ease forwards;
 }
-.intro_index a button:not(:hover) {
+.intro_index .button:not(:hover) {
   animation: gradient-button-out 400ms ease forwards, shadow-button-out 400ms ease forwards;
 }
 
@@ -484,7 +485,7 @@ body {
   align-items: center;
   padding-top: 50px;
 }
-.button-pages button {
+.button-pages .button {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -502,10 +503,10 @@ body {
   filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.15));
   cursor: pointer;
 }
-.button-pages button:hover {
+.button-pages .button:hover {
   animation: gradient-button-in 400ms ease forwards, shadow-button-in 400ms ease forwards;
 }
-.button-pages button:not(:hover) {
+.button-pages .button:not(:hover) {
   animation: gradient-button-out 400ms ease forwards, shadow-button-out 400ms ease forwards;
 }
 
