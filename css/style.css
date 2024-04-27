@@ -46,6 +46,11 @@
   position: absolute;
   transform: translateX(-150%);
 }
+@media (min-width: 768px) and (max-width: 840px) {
+  .fonctionnement .fonctsepar .fonct-button .fa-mobile-alt, .fonctionnement .fonctsepar .fonct-button .fa-list-ul, .fonctionnement .fonctsepar .fonct-button .fa-store {
+    transform: translateX(-95%);
+  }
+}
 .fonctionnement .fonctsepar .fonct-button:hover {
   animation: shadow-button-in 400ms ease forwards;
 }
@@ -65,13 +70,12 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 125%;
+    width: 86%;
   }
   .fonctionnement .fonctsepar .fonct-button {
-    position: relative;
+    position: space-evenly;
     margin-left: 10px;
     margin-right: 10px;
-    width: 20%;
   }
 }
 .restaurant {

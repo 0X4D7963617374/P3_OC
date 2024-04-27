@@ -36,7 +36,9 @@
             .fa-mobile-alt,.fa-list-ul,.fa-store
                 position: absolute
                 transform: translateX(-150%)
-
+                @media (min-width: 768px) and (max-width: 840px)
+                    transform: translateX(-95%)
+                    
             &:hover
                 animation: shadow-button-in 400ms ease forwards
                 .fa-mobile-alt,.fa-list-ul,.fa-store
@@ -54,12 +56,12 @@
 
         .fonctsepar
             +flex-reg(row,center, center)
-            width: 125%
+            width: 86%
 
             .fonct-button
-                position: relative
+                position: space-evenly
                 margin-left: 10px
                 margin-right: 10px
-                width: 20%
+                
             
     
